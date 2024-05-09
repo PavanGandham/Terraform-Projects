@@ -1,0 +1,67 @@
+/* Import the Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+/* Define the base color variable */
+:root {
+    --first-color: #00ffff; /* cyan */
+}
+
+/* Reset and set the font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* Set body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000; /* Black background */
+}
+
+/* Center the webpage header */
+h1 {
+    color: rgba(255, 255, 255, 0.4); /* Light gray color */
+    text-align: center; /* Centered header */
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+
+/* Container to vertically align buttons */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Vertically align */
+    gap: 20px; /* Space between buttons */
+    align-items: center; /* Center align the buttons */
+}
+
+/* Styling for the buttons (anchor tags) */
+a {
+    display: inline-block;
+    font-size: 1.5rem; /* Slightly smaller font for anchor tags */
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4); /* Light gray color */
+    background: #111; /* Dark background */
+    padding: 10px 30px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    transition: 0.8s; /* Smooth transition on hover */
+}
+
+/* Glowing hover effect */
+a:hover {
+    letter-spacing: 0.2rem; /* Increase spacing on hover */
+    color: var(--first-color); /* Cyan color */
+    text-shadow: 0 0 5px var(--first-color); /* Glowing effect */
+    box-shadow:
+        0 0 10px var(--first-color),
+        0 0 20px var(--first-color),
+        0 0 40px var(--first-color),
+        0 0 80px var(--first-color),
+        0 0 160px var(--first-color); /* Multi-layered glow */
+}

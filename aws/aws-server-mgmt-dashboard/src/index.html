@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Centered header -->
+        <h1>Server Management Dashboard</h1>
+
+        <!-- Vertical stack of buttons -->
+        <div class="button-container">
+            <a href="#" onclick="redirectTo('webserverSetup')">Webserver Setup</a>
+            <a href="#" onclick="redirectTo('systemBackup')">System Backup</a>
+            <a href="#" onclick="redirectTo('systemLogs')">System Logs</a>
+            <a href="#" onclick="redirectTo('webserverLogs')">WebServer Logs</a>
+        </div>
+    </div>
+
+    <!-- Include external JavaScript file for button actions -->
+    <script src="actions.js"></script>
+</body>
+</html>
